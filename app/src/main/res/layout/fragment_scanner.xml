@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scanner.ScannerFragment">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFocusButtonColor="@color/frame_color"
+        app:autoFocusButtonVisible="false"
+        app:flashButtonColor="@color/frame_color"
+        app:flashButtonVisible="false"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@color/frame_color"
+        app:frameCornersRadius="16dp"
+        app:frameSize="0.65"
+        app:frameThickness="3dp"
+        app:maskColor="@color/mask_color" />
+
+    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#303030"
+        app:top_left_corner_radius="24dp"
+        app:top_right_corner_radius="24dp">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="16dp"
+            android:background="#272727"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            app:corner_radius="24dp">
+
+            <ImageButton
+                android:id="@+id/auto_focus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_auto_focus_selector" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/flash_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_flash_selector" />
+        </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+</FrameLayout>

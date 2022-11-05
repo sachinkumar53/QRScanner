@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:title="Upgrade to premium"
+        app:isPreferenceVisible="false" />
+
+    <Preference
+        android:title="Rate this app"
+        app:icon="@drawable/ic_rate"
+        app:key="rate" />
+
+    <Preference
+        android:title="Share this app"
+        app:icon="@drawable/ic_share"
+        app:key="share" />
+
+    <Preference
+        android:title="Feedback"
+        app:icon="@drawable/ic_feedback"
+        app:key="feedback" />
+
+    <Preference
+        android:title="More apps"
+        app:icon="@drawable/ic_more_apps"
+        app:key="more_apps" />
+
+</PreferenceScreen>

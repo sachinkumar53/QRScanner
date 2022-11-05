@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QR Scanner</string>
+    <string name="open_link">Open link</string>
+    <string name="copy">Copy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="history">History</string>
+    <string name="about">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
